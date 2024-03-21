@@ -1,0 +1,22 @@
+[package]
+name = "dms_tools"
+version = "0.1.0"
+authors = ["James Shepherdson <james.shepherdson@wustl.edu>"]
+edition = "2021"
+license = "MIT"
+description = "Rust bioinformatics library for working with Deep Mutational Scanning data"
+
+[lib]
+name = "dms_tools"
+
+[dependencies]
+csv = { version = "^1.1" }
+lazy_static = { version = "^1.4" }
+regex = { version = "^1.4" }
+thiserror = { version = "^1.0" }
+
+[workspace]
+members = [
+    "dms_cmd",
+    "pydmstools"
+]

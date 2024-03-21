@@ -1,0 +1,7 @@
+barcodes/*.parquet
+external_data_sources/barcode_to_variant_map.tsv
+output/*
+!output/README.md
+venv/
+.ipynb_checkpoints/
+*.so

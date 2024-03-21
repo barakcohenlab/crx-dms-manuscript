@@ -1,0 +1,18 @@
+[package]
+name = "fphd"
+version = "0.1.0"
+authors = ["James Shepherdson <james.shepherdson@wustl.edu>"]
+edition = "2021"
+license = "MIT"
+description = "Python library for calculating hamming distances of many strings in parallel (Fast Parallel Hamming Distance)"
+
+[lib]
+name = "fphd"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "^0.20", features = ["extension-module"] }
+rayon = { version = "^1.7" }
+
+[build-dependencies]
+pyo3-build-config = { version = "^0.20" }

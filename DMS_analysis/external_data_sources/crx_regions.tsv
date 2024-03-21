@@ -1,0 +1,8 @@
+region	precedence	start	stop	color
+Homeodomain	0	39	108	#ffffff
+Basic	0	113	120	#ffffff
+WSP	0	161	170	#ffffff
+OTX-tail	0	284	299	#ffffff
+α-helix 1	1	48	60	#e0e0e0
+α-helix 2	1	66	75	#e0e0e0
+α-helix 3	1	80	104	#e0e0e0

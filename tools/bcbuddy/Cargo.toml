@@ -1,0 +1,17 @@
+[package]
+name = "bcbuddy"
+version = "0.1.0"
+authors = ["James Shepherdson <james.shepherdson@wustl.edu>"]
+edition = "2021"
+license = "MIT"
+description = "Tool for extracting and aggregating sequence barcodes"
+
+[[bin]]
+name = "bcbuddy"
+
+[dependencies]
+clap = { version = "^4.1", features = ["derive"] }
+itertools = { version = "^0.10" }
+phf = { version = "^0.11", features = ["macros"] }
+regex = { version = "^1.7" }
+thiserror = { version = "^1.0" }
