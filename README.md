@@ -28,3 +28,12 @@ Washington University in St. Louis School of Medicine, St. Louis, MO 63110, USA
     * **dms_tools** includes a library for parsing the output of `minimap2` for long read data analysis; used by `call_variants.py`
     * **fphd** implements a parallelized Hamming distance calculation for barcode error correction
 
+## Notes
+
+`crx_genomic_positions.tsv` is provided to translate protein-level variant coordinates into cDNA and gDNA coordinates. To produce a VCF-compatible file, `awk` or a similar tool can be used. For example:
+
+```
+awk 'BEGIN {FS="\t"; OFS="\t"} {print 19, $5, ".", $6, $7, ".", "PASS", "var="$1$2$3}' crx_genomic_positions.tsv
+```
+
+Note that you may wish to first filter the `crx_genomic_positions` table to particular variants of interest, or join it with the DMS or computational predictor data to include scores in the VCF.
