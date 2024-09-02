@@ -1,6 +1,6 @@
 This repository includes code for the analyses described in:
 
-**"Mutational scanning of *CRX* classifies clinical variants and reveals biochemical properties of the transcriptional effector domain"**
+**"Mutational scanning of *CRX* classifies clinical variants and reveals biochemical properties of the transcriptional effector domain"** ([10.1101/gr.279415.124](doi.org/10.1101/gr.279415.124))
 
 James L. Shepherdson¹﹐²\
 David M. Granas¹﹐²\
